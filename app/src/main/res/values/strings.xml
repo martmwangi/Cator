@@ -2,4 +2,5 @@
     <string name="app_name">Cator</string>
     <string name="title_activity_splash">Splash</string>
     <string name="title_activity_login">Login</string>
+    <string name="title_activity_people">People</string>
 </resources>
