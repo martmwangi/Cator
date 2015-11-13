@@ -20,7 +20,11 @@ public class People extends AppCompatActivity {
         setContentView(R.layout.activity_people);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        //Db connection
+        Firebase.setAndroidContext(this);
         Firebase rootRef = new Firebase("https://martmwangi.firebaseio.com/");
+
 
 
 

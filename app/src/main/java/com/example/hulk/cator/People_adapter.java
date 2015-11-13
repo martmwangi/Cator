@@ -7,7 +7,7 @@ import android.view.ViewGroup;
  * Created by hulk on 11/13/15.
  */
 public class People_adapter extends RecyclerView.Adapter<People_adapter.ViewHolder> {
-    S
+
     @Override
     public People_adapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         return null;
