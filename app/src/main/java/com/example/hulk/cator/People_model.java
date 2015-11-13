@@ -7,11 +7,11 @@ import android.widget.TextView;
 /**
  * Created by hulk on 11/13/15.
  */
-public class people_model {
+public class People_model {
     public String first_name,last_name,email,country,company_name;
     public int id,credit_card;
 
-    public people_model(){
+    public People_model(){
         this.first_name = first_name;
         this.last_name = last_name;
         this.id = id;

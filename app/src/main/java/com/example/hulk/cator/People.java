@@ -23,7 +23,7 @@ public class People extends AppCompatActivity {
 
         //Db connection
         Firebase.setAndroidContext(this);
-        Firebase rootRef = new Firebase("https://martmwangi.firebaseio.com/");
+        Firebase rootref = new Firebase("https://martmwangi.firebaseio.com/");
 
 
 

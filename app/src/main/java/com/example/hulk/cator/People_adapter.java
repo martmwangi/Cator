@@ -3,26 +3,33 @@ package com.example.hulk.cator;
 import android.support.v7.widget.RecyclerView;
 import android.view.ViewGroup;
 
+import com.firebase.client.Firebase;
+import com.firebase.client.Query;
+import com.firebase.ui.FirebaseRecyclerViewAdapter;
+
 /**
  * Created by hulk on 11/13/15.
  */
-public class People_adapter extends RecyclerView.Adapter<People_adapter.ViewHolder> {
+public class People_adapter extends FirebaseRecyclerViewAdapter<People_model,ViewHolder> {
 
-    @Override
-    public People_adapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        return null;
+    Class<People_model> mModelClass;
+    protected int mModelLayout;
+    Class<ViewHolder> mViewHolderClass;
+    FirebaseArray mSnapshots;
+
+
+    public People_adapter(Class<People_model> modelClass, int modelLayout, Class<ViewHolder> viewHolderClass, Query ref) {
+        super(modelClass, modelLayout, viewHolderClass, ref);
+
+        mModelClass = modelClass;
+        mModelLayout = modelLayout;
+        mViewHolderClass = viewHolderClass;
+//        mSnapshots = new FirebaseArray(rootref);
     }
 
     @Override
-    public void onBindViewHolder(People_adapter.ViewHolder holder, int position) {
+    public void populateViewHolder(ViewHolder viewHolder, People_model people_model) {
 
-    }
-
-    @Override
-    public int getItemCount() {
-        return 0;
-    }
-
-    public class ViewHolder extends RecyclerView.ViewHolder {
     }
 }
+

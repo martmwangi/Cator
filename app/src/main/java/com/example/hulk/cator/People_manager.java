@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
+import com.firebase.client.Firebase;
+
 /**
  * Created by hulk on 11/13/15.
  */
@@ -16,6 +18,8 @@ public class People_manager extends Activity {
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_people);
+        Firebase.setAndroidContext(this);
+        Firebase rootref = new Firebase("https://martmwangi.firebaseio.com/");
         mRecyclerView = (RecyclerView) findViewById(R.id.my_recycler_view);
 
 
