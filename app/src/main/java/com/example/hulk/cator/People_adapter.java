@@ -24,7 +24,7 @@ public class People_adapter extends FirebaseRecyclerViewAdapter<People_model,Vie
         mModelClass = modelClass;
         mModelLayout = modelLayout;
         mViewHolderClass = viewHolderClass;
-//        mSnapshots = new FirebaseArray(rootref);
+        mSnapshots = new FirebaseArray(ref);
     }
 
     @Override
